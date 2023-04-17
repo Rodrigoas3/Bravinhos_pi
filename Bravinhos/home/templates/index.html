@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		{% include 'partials/_head.html'%}
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+					<!--cabeçalho-->
+					{%include 'partials/_header.html'%}
+					<!--menu-->
+					{%include 'partials/_menu.html'%}
+					<!-- Banner -->
+					{%include 'partials/_banner.html'%}
+					<!-- Main -->
+					<div id="main">
+						<!-- sessão 1 -->
+						{%include 'partials/_section-one.html'%}
+						<!-- sessão 2 -->
+						{%include 'partials/_section-two.html'%}
+					</div>
+				<!-- Contatos -->
+				{%include 'partials/_contatos.html'%}
+				<!-- Footer -->
+				{%include 'partials/_footer.html'%}
+			</div>
+		<!-- Scripts -->
+			<script src="{% static 'js/jquery.min.js'%}"></script>
+			<script src="{% static 'js/jquery.scrolly.min.js'%}"></script>
+			<script src="{% static 'js/jquery.scrollex.min.js'%}"></script>
+			<script src="{% static 'js/browser.min.js'%}"></script>
+			<script src="{% static 'js/breakpoints.min.js'%}"></script>
+			<script src="{% static 'js/util.js'%}"></script>
+			<script src="{% static 'js/main.js'%}"></script>
+
+	</body>
+</html>
